@@ -118,5 +118,5 @@ def to_code(config):
 
     cg.add_library("LTHeatpumpIR=https://github.com/X-Ryl669/arduino-heatpumpir#Libretiny", "1.0.25")
 
-    if CORE.is_esp8266 or CORE.is_esp32:
+    if CORE.is_esp8266 or CORE.is_esp32 or CORE.is_libretiny:
         cg.add_library("X-Ryl669/IRremoteESP8266", "2.8.6")
